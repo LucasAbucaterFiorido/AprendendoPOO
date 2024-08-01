@@ -6,20 +6,22 @@
     <title>Aprendendo POO</title>
 </head>
 <body>
-    <?php
-        include_once("ControleRemoto.php");
-        $c1 = new ControleRemoto();
-        $c1->ligar();
-        $c1->abrirMenu();
-        $c1->play();
-        $c1->mudoON();
-        $c1->abrirMenu();
-        $c1->mudoOFF();
-        $c1->maisVolume();
-        $c1->pause();
-        $c1->abrirMenu();
-        $c1->fecharMenu();
-        $c1->desligar();
-    ?>
+    <!-- abrindo PHP -->
+    <?php                                       
+        include_once("ControleRemoto.php");     //incluindo classe no arquivo principal.
+        $c1 = new ControleRemoto();             //criando um novo objeto da classe "ControleRemoto" nomeado "c1"
+        $c1->ligar();                           //ligando eletronico com o controle remoto(c1).
+        $c1->abrirMenu();                       //abrindo menu com o controle remoto(c1).
+        $c1->play();                            //dando o play(reproduzindo) com o controle remoto(c1).
+        $c1->mudoON();                          //colocando volume no mudo com controle remoto(c1).
+        $c1->abrirMenu();                       //abrindo menu com o controle remoto(c1).
+        $c1->mudoOFF();                         //tirando volume no mudo com controle remoto(c1).
+        $c1->maisVolume();                      //aumentando volume com controle remoto(c1).
+        $c1->pause();                           //dando o pause(interrompendo reprodução) com o controle remoto(c1).
+        $c1->abrirMenu();                       //abrindo menu com o controle remoto(c1).
+        $c1->fecharMenu();                      //fechando menu com o controle remoto(c1).
+        $c1->desligar();                        //desligando eletronico com o controle remoto(c1).
+    ?>                        
+    <!-- abrindo PHP -->
 </body>
 </html>
