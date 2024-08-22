@@ -26,9 +26,6 @@
         $a1->cancelarMatricula();
         
 
-
-
-
         echo "<pre>";
         //var_dump($a1);
         print_r($p1);
